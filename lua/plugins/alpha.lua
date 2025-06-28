@@ -4,9 +4,9 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    local startify = require("alpha.themes.startify")
-    startify.file_icons.provider = "devicons"
+    local theta = require("alpha.themes.theta")
+    theta.file_icons.provider = "devicons"
 
-    require("alpha").setup(startify.config)
+    require("alpha").setup(theta.config)
   end,
 }
