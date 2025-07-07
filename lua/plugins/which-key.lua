@@ -29,6 +29,7 @@ return {
       { "<leader>f", group = "File" },
       { "<leader>l", group = "LSP" },
       { "<leader>t", group = "NeoTree" },
+      { "<leader>w", group = "Window" },
     })
   end,
 }
