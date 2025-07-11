@@ -26,3 +26,5 @@ vim.keymap.set("n", "<leader>bp", ":bp<CR>", { desc = "Previous buffer", noremap
 
 vim.keymap.set("n", "<leader>xx", ":xa<CR>", { noremap = true, silent = true })
 vim.keymap.set({ "n", "i", "v" }, "<C-s>", ":w<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>fT", function() Snacks.terminal() end, { desc = "Terminal (cwd)" })
