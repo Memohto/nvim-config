@@ -16,6 +16,7 @@ return {
         },
       },
     })
-    vim.keymap.set("n", "<leader>tt", ":Neotree toggle<CR>", { desc = "Toggle tree", noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>tn", ":Neotree toggle<CR>", { desc = "Toggle tree", noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>tf", ":Neotree focus<CR>", { desc = "Focus tree", noremap = true, silent = true })
   end
 }

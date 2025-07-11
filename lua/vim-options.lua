@@ -24,4 +24,5 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer", noremap =
 vim.keymap.set("n", "<leader>bn", ":bn<CR>", { desc = "Next buffer", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bp", ":bp<CR>", { desc = "Previous buffer", noremap = true, silent = true })
 
-vim.keymap.set("n", "<leader>xx", ":xa<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>xx", ":xa<CR>", { noremap = true, silent = true })
+vim.keymap.set({ "n", "i", "v" }, "<C-s>", ":w<CR>", { noremap = true, silent = true })
