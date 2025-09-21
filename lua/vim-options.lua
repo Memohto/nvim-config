@@ -31,6 +31,9 @@ end
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 vim.keymap.set("n", "<leader>n", toggle_line_numbers, { desc = "Toggle Copy Mode" })
+vim.keymap.set("n", "<leader>cf", function()
+  vim.cmd("normal! gg=G")
+end, { desc = "Indent File" })
 
 vim.keymap.set('n', '<leader>-', '<C-w>s', { desc = "Split Horizontally", noremap = true })
 vim.keymap.set('n', '<leader>|', '<C-w>v', { desc = "Split Vertically", noremap = true })

@@ -26,6 +26,7 @@ return {
 
       map("n", "<leader>gB", function() gs.blame() end, "Git Blame Buffer")
       map("n", "<leader>gD", gs.diffthis, "Git Diff Buffer")
+      map({ "n", "v" }, "<leader>gr", ":Gitsigns reset_hunk<CR>", "Reset Hunk")
     end,
   },
 }

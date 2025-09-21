@@ -29,6 +29,7 @@ return {
       { "<leader>f", group = "File" },
       { "<leader>l", group = "LSP" },
       { "<leader>g", group = "Git" },
+      { "<leader>c", group = "Code" },
     })
   end,
 }
