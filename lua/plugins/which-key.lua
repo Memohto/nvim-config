@@ -28,8 +28,7 @@ return {
       { "<leader>b", group = "Buffer" },
       { "<leader>f", group = "File" },
       { "<leader>l", group = "LSP" },
-      { "<leader>t", group = "NeoTree" },
-      { "<leader>w", group = "Window" },
+      { "<leader>g", group = "Git" },
     })
   end,
 }
