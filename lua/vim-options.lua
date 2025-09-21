@@ -44,4 +44,4 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete Buffer", noremap =
 
 vim.keymap.set("n", "<C-x>", ":xa<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-w>", ":w<CR>", { noremap = true })
-vim.keymap.set("n", "<C-q>", ":qa!<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-q>", ":q!<CR>", { noremap = true, silent = true })
