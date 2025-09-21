@@ -6,6 +6,8 @@ vim.opt.shiftwidth = 2
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.g.lazygit_floating_window_scaling_factor = 0.8
+
 vim.g.mapleader = " "
 
 -- Function to toggle line numbers
@@ -43,7 +45,11 @@ vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 
-vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete Buffer", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Delete Buffer", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bd", function()
+  local n = vim.api.nvim_get_current_buf()
+  Snacks.bufdelete(n) 
+end, { desc = "Delete Buffer" })
 
 vim.keymap.set("n", "<C-x>", ":xa<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-w>", ":w<CR>", { noremap = true })
